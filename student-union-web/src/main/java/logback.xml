@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- 配置日志输出类型为滚动日志， -->
+    <!-- 下面的配置为每天生成一个日志文件-->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 配置滚动策略，TimeBasedRollingPolicy是比较常用的一种滚动策略,它根据时间来制定滚动策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 指定滚动生成文件的文件名，下面将以日期作为日志的文件名 -->
+
+            <fileNamePattern>D:\upload\logback\info/%d{yyyy-MM-dd}.log</fileNamePattern>
+<!--            <fileNamePattern>D:\upload\logback\logs/%d{yyyy-MM-dd}.log</fileNamePattern>-->
+            <!-- 决定保留的归档文件的最大数量,这里只保留30天的日志文件 -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <!-- 指定日志的输出格式 -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %p %C - %m%n</pattern>
+        </encoder>
+    </appender>
+    <!-- 指定logger根的输出级别并引用输出类型 -->
+    <root level="info">
+        <appender-ref ref="file" />
+    </root>
+</configuration>

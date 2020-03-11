@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>edu.nf</groupId>
+    <artifactId>student-union-system</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>student-union-entity</module>
+        <module>student-union-dao</module>
+        <module>student-union-service</module>
+        <module>student-union-web</module>
+        <module>student-union-util</module>
+    </modules>
+    <packaging>pom</packaging>
+
+
+    <!-- 属性配置 -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+        <!-- spring版本 -->
+        <spring.version>5.1.5.RELEASE</spring.version>
+        <!-- junit版本 -->
+        <junit.version>4.12</junit.version>
+        <!-- druid版本-->
+        <druid.version>1.1.20</druid.version>
+        <!-- mysql驱动-->
+        <mysql.version>5.1.47</mysql.version>
+        <!-- aspectjweaver-->
+        <aspect.versin>1.9.4</aspect.versin>
+        <!-- mybatis-->
+        <mybatis.version>3.5.3</mybatis.version>
+        <!-- mybatis-spring-->
+        <mybatis.spring.version>2.0.3</mybatis.spring.version>
+        <!-- servlet-api-->
+        <servlet.version>4.0.1</servlet.version>
+        <!--jackson -->
+        <jackson.version>2.10.0</jackson.version>
+        <!-- pagehelper -->
+        <pagehelper.version>5.1.10</pagehelper.version>
+        <!-- logback-->
+        <logback.version>1.2.3</logback.version>
+        <!-- logback-spring-->
+        <logback.spring.version>0.1.5</logback.spring.version>
+        <!--注入攻击-->
+        <commons.text.version>1.6</commons.text.version>
+        <!--上传文件-->
+        <file.version>1.3.3</file.version>
+        <!--json-->
+        <json.version>2.2.3</json.version>
+    </properties>
+    <!--依赖管理-->
+    <dependencyManagement>
+
+        <dependencies>
+            <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${servlet.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <!-- spring-context -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <!-- spring-webmvc -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <!-- spring-jdbc -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <!-- 事务管理-->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspect.versin}</version>
+            </dependency>
+            <!-- Junit单元测试 -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- druid连接池 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!-- mysql驱动 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <!-- mybatis -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <!-- mybatis整合插件 -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis.spring.version}</version>
+            </dependency>
+            <!-- pagehelper -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+            <!-- logback-->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+            <!-- logback-spring-->
+            <dependency>
+                <groupId>org.logback-extensions</groupId>
+                <artifactId>logback-ext-spring</artifactId>
+                <version>${logback.spring.version}</version>
+            </dependency>
+            <!-- 注入攻击commons-text -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>${commons.text.version}</version>
+            </dependency>
+
+            <!--上传文件-->
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${file.version}</version>
+            </dependency>
+
+
+            <!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
+            <dependency>
+                <groupId>net.sf.json-lib</groupId>
+                <artifactId>json-lib</artifactId>
+                <version>${json.version}</version>
+            </dependency>
+
+
+
+
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

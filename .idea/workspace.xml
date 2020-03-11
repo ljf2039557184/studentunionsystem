@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="student-union-web:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b07a8d3f-0362-4303-a46c-2f540d3cbdda" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/student_union_web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/student-union-system.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/student_union_web_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/java/edu/nf/student/dao/DataBaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/java/edu/nf/student/dao/DepartmentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/java/edu/nf/student/dao/JournalDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/java/edu/nf/student/dao/PositionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/java/edu/nf/student/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/java/edu/nf/student/dao/config/DaoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/resources/mapper/DataBaseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/resources/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/resources/mapper/JournalMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/resources/mapper/PositionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/main/resources/mapper/StudentUnionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-dao/src/test/java/edu/nf/student/dao/StudentDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-entity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-entity/src/main/java/edu/nf/student/entity/DataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-entity/src/main/java/edu/nf/student/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-entity/src/main/java/edu/nf/student/entity/Journal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-entity/src/main/java/edu/nf/student/entity/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-entity/src/main/java/edu/nf/student/entity/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-entity/src/main/java/edu/nf/student/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/DataBaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/JournalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/exception/DataAccessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/impl/DataBaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/impl/JournalServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/impl/PositionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/main/java/edu/nf/student/service/util/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/test/java/edu/nf/student/service/DepartmentServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/test/java/edu/nf/student/service/PositionServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-service/src/test/java/edu/nf/student/service/StudentServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-system.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-util/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/BaceControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/DataBaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/DepartmentInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/JournalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/PositionInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/StudentUnionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/advice/ControllerAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/config/WebInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/util/MyFileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/edu/nf/student/controller/vo/ResponseVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/src/main/java/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/addinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/barRating/barRating.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/calendar/fullcalendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/calendar2/pignose.calendar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/calendar2/semantic.ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/data-table/buttons.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/data-table/buttons.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/data-table/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/jsgrid/jsgrid-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/jsgrid/jsgrid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/lobi-panel/lobipanel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/mmc-chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/nestable/nestable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/nixon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/rangSlider/ion.rangeSlider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/rangSlider/ion.rangeSlider.skinFlat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/rangSlider/ion.rangeSlider.skinHTML5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/rangSlider/ion.rangeSlider.skinModern.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/rangSlider/ion.rangeSlider.skinNice.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/rangSlider/ion.rangeSlider.skinSimple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/rangSlider/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/scrollable/scrollable.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/sweetalert/sweetalert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/toastr/toastr.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/lib/vector-map/jqvmap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/css/fa-brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/css/fa-brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/css/fa-regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/css/fa-regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/css/fa-solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/css/fa-solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/css/fontawesome-all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/css/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/fa-brands.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/fa-regular.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/fa-solid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/scss/fontawesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fontAwesome/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/MontserratLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/MontserratLight.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/MontserratLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/MontserratLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/MontserratLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/fontawesome-webfont_files/viewsource.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/weathericons-regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/weathericons-regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/weathericons-regular-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/weathericons-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/fonts/weathericons-regular-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/avatar/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/avatar/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/avatar/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/avatar/usa-flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/chat-person-add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/fjords.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/hand.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/lights.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/maximize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/minimize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/nature.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/newyork.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/paris.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/preview1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/rangeSliderimg/sprite-skin-flat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/rangeSliderimg/sprite-skin-modern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/rangeSliderimg/sprite-skin-nice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/rangeSliderimg/sprite-skin-simple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/sanfran.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/smile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/user-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/user-profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/images/video-cam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/barRating/barRating.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/barRating/jquery.barrating.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/calendar-2/moment.latest.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/calendar-2/pignose.calendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/calendar-2/pignose.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/calendar-2/prism.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/calendar-2/semantic.ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/calendar/fullcalendar-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/calendar/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/chart-js/Chart.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/chart-js/chartjs-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/chat-widget/chat-widget-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/buttons.colVis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/buttons.flash.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/buttons.html5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/buttons.print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/dataTables.buttons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/datatables-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/datatables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/pdfmake.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/data-table/vfs_fonts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/datamap/d3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/datamap/datamap-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/datamap/datamaps.world.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/datamap/topojson.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/curvedLines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/flot-chart-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/flot-tooltip/jquery.flot.tooltip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/jquery.flot.categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/jquery.flot.crosshair.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/jquery.flot.stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/jquery.flot.threshold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flot-chart/jquery.flot.time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/flowtype.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/gmap/gmap.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/gmap/gmapApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/gmap/gmaps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/invoice-edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jquery-ui/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jquery-ui/jquery.ui.touch-punch.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jquery.nanoscroller.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/fields/jsgrid.field.checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/fields/jsgrid.field.control.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/fields/jsgrid.field.number.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/fields/jsgrid.field.select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/fields/jsgrid.field.text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/fields/jsgrid.field.textarea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/jsgrid-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/jsgrid.core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/jsgrid.field.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/jsgrid.load-indicator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/jsgrid.load-strategies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/jsgrid.sort-strategies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/jsgrid/jsgrid.validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/knob/jquery.knob.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/knob/knob.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/lobi-panel/lobipanel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/mmc-chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/mmc-common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/moment/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/morris-chart/morris-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/morris-chart/morris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/nestable/jquery.nestable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/nestable/nestable.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/owl-carousel/owl.carousel-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/owl-carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/peitychart/jquery.peity.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/peitychart/peitychart.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/rangeSlider/ion.rangeSlider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/rangeSlider/moment-with-locales.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/rangeSlider/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/rangeSlider/rangeslider.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/rating1/jRate.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/rating1/jRate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/scrollable/holder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/scrollable/jquery-asScrollable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/scrollable/jquery-asScrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/scrollable/scrollable.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/sparklinechart/jquery.sparkline.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/sparklinechart/sparkline.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/sweetalert/sweetalert.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/sweetalert/sweetalert.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/toastr/toastr.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/toastr/toastr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.algeria.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.argentina.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.brazil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.europe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.france.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.germany.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.greece.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.iran.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.iraq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.russia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.tunisia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.turkey.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.usa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/country/jquery.vmap.world.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/jquery.vmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/jquery.vmap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/jquery.vmap.sampledata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/lib/vector-map/vector.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/lib/lobipanel/css/lobipanel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/lib/lobipanel/css/lobipanel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/lib/lobipanel/js/lobipanel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/assets/lib/lobipanel/js/lobipanel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/css/app.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/css/bootstrap-datepicker3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/css/bootstrap-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/css/htmleaf-demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/css/icons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/css/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/data/addinfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/data/department.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/data/fileupload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/data/logback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/data/persiondata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/data/stuInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/daywork.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/department.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/fileupload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/fonts/Nunito-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/fonts/Nunito-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/fonts/Nunito-SemiBold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/fonts/dripicons-v2.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/fonts/summernote.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/fonts/summernote.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/images/head-portrait.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/images/touxiang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/images/登录界面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/app.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/bootstrap-datepicker.zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/easyUploader.jq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/jquery.pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/js/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/logback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/meetingarrangement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/monthlyplan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student-union-web/web/static/personaldata.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="mybatis-mapper" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\IdeaProjects\student-union-system\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\repo" />
+        <option name="mavenHome" value="D:/Maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.gitignore" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Tq0wmDTER0nr3B59EReI1PTo8I" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="edu.nf.student.service" />
+      <recent name="edu.nf.student.dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.nf.student.controller.util" />
+      <recent name="edu.nf.student.controller" />
+      <recent name="edu.nf.student.controller.interceptor" />
+      <recent name="edu.nf.student.dao.config" />
+      <recent name="edu.nf.student.service.exception" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\student-union-system\student-union-web\src\main\java" />
+      <recent name="D:\IdeaProjects\student-union-system\student-union-web\web\static\images" />
+      <recent name="D:\IdeaProjects\student-union-system\student-union-service\src\main\java\edu\nf\student\service\util" />
+      <recent name="D:\IdeaProjects\student-union-system\student-union-web\web\static\js" />
+      <recent name="D:\IdeaProjects\student-union-system\student-union-web\web\static\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.421">
+    <configuration name="DepartmentServiceTest.listDepartment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="student-union-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.student.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.student.service" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.student.service.DepartmentServiceTest" />
+      <option name="METHOD_NAME" value="listDepartment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositionServiceTest.listPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="student-union-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.student.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.student.service" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.student.service.PositionServiceTest" />
+      <option name="METHOD_NAME" value="listPosition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDaoTest.getStudentLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="student-union-dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.student.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.student.dao" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.student.dao.StudentDaoTest" />
+      <option name="METHOD_NAME" value="getStudentLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest.getStudentFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="student-union-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.student.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.student.service" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.student.service.StudentServiceTest" />
+      <option name="METHOD_NAME" value="getStudentFind" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest.studentLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="student-union-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nf.student.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nf.student.service" />
+      <option name="MAIN_CLASS_NAME" value="edu.nf.student.service.StudentServiceTest" />
+      <option name="METHOD_NAME" value="studentLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.421" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.421" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="student-union-web:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_student-union-system_3" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51279" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="student-union-web:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.StudentServiceTest.studentLogin" />
+      <item itemvalue="JUnit.StudentDaoTest.getStudentLogin" />
+      <item itemvalue="JUnit.StudentServiceTest.getStudentFind" />
+      <item itemvalue="JUnit.PositionServiceTest.listPosition" />
+      <item itemvalue="JUnit.DepartmentServiceTest.listDepartment" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.421" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StudentServiceTest.getStudentFind" />
+        <item itemvalue="JUnit.DepartmentServiceTest.listDepartment" />
+        <item itemvalue="JUnit.PositionServiceTest.listPosition" />
+        <item itemvalue="JUnit.StudentServiceTest.studentLogin" />
+        <item itemvalue="JUnit.StudentDaoTest.getStudentLogin" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b07a8d3f-0362-4303-a46c-2f540d3cbdda" name="Default Changelist" comment="" />
+      <created>1574172558503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574172558503</updated>
+      <workItem from="1574172561448" duration="3495000" />
+      <workItem from="1574214279952" duration="13665000" />
+      <workItem from="1574296160763" duration="10693000" />
+      <workItem from="1574380969144" duration="806000" />
+      <workItem from="1574385892809" duration="9151000" />
+      <workItem from="1574420560896" duration="23000" />
+      <workItem from="1574595526554" duration="1455000" />
+      <workItem from="1574818387339" duration="8168000" />
+      <workItem from="1575201268090" duration="2080000" />
+      <workItem from="1575244614054" duration="8563000" />
+      <workItem from="1575255254500" duration="7283000" />
+      <workItem from="1575331087209" duration="21636000" />
+      <workItem from="1575422815150" duration="10579000" />
+      <workItem from="1575503150333" duration="11372000" />
+      <workItem from="1575518518411" duration="12188000" />
+      <workItem from="1575554227683" duration="1359000" />
+      <workItem from="1575591395386" duration="13084000" />
+      <workItem from="1576108706673" duration="18338000" />
+      <workItem from="1576542243604" duration="9991000" />
+      <workItem from="1576656102988" duration="3572000" />
+      <workItem from="1576711223830" duration="19190000" />
+      <workItem from="1576801741257" duration="14237000" />
+      <workItem from="1577012841429" duration="800000" />
+      <workItem from="1577060331545" duration="2194000" />
+      <workItem from="1577099276659" duration="6840000" />
+      <workItem from="1577186714983" duration="642000" />
+      <workItem from="1577235076456" duration="11679000" />
+      <workItem from="1577315547850" duration="4208000" />
+      <workItem from="1577617858144" duration="4937000" />
+      <workItem from="1577752161973" duration="1612000" />
+      <workItem from="1577758484183" duration="1133000" />
+      <workItem from="1579173224931" duration="983000" />
+      <workItem from="1580554852968" duration="93000" />
+      <workItem from="1582282752400" duration="3262000" />
+      <workItem from="1583330721101" duration="363000" />
+      <workItem from="1583908633538" duration="516000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1323" height="142" key="GridCell.Tab.0.bottom" timestamp="1582373978860">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="142" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582373978860" />
+    <state width="1323" height="142" key="GridCell.Tab.0.center" timestamp="1582373978859">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="142" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582373978859" />
+    <state width="1323" height="142" key="GridCell.Tab.0.left" timestamp="1582373978859">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="142" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582373978859" />
+    <state width="1323" height="142" key="GridCell.Tab.0.right" timestamp="1582373978859">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="142" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582373978859" />
+    <state width="905" height="179" key="GridCell.Tab.1.bottom" timestamp="1582373978830">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582373978830" />
+    <state width="905" height="179" key="GridCell.Tab.1.center" timestamp="1582373978829">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1582373978829" />
+    <state width="905" height="179" key="GridCell.Tab.1.left" timestamp="1582373978829">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1582373978829" />
+    <state width="905" height="179" key="GridCell.Tab.1.right" timestamp="1582373978830">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1582373978830" />
+    <state width="905" height="179" key="GridCell.Tab.2.bottom" timestamp="1582373978830">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582373978830" />
+    <state width="905" height="179" key="GridCell.Tab.2.center" timestamp="1582373978830">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1582373978830" />
+    <state width="905" height="179" key="GridCell.Tab.2.left" timestamp="1582373978830">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1582373978830" />
+    <state width="905" height="179" key="GridCell.Tab.2.right" timestamp="1582373978830">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1582373978830" />
+  </component>
+</project>

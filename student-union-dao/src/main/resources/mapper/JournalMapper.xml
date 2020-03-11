@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nf.student.dao.JournalDao">
+    <resultMap id="journalMapper" type="edu.nf.student.entity.Journal">
+        <id property="jid" column="j_id"/>
+        <result property="stuOperator" column="j_name"/>
+        <result property="stuOperation" column="j_operation"/>
+        <result property="operatorDate" column="j_data"/>
+    </resultMap>
+    <insert id="addJounal" parameterType="edu.nf.student.entity.Journal">
+      insert into student_journal(j_name,j_operation,j_data)VALUES(#{stuOperator},#{stuOperation},#{operatorDate})
+    </insert>
+    <delete id="deleteJounal" parameterType="java.lang.Integer">
+     delete FROM student_journal where j_id = #{jid}
+    </delete>
+    <!--日志信息-->
+    <select id="listJournal" resultMap="journalMapper">
+        select * from student_journal
+    </select>
+
+    <!--模糊查询-->
+    <select id="getJournal" resultMap="journalMapper"  parameterType="java.lang.String">
+       select * from student_journal where j_data like #{param1}"%" or
+        j_name like #{param1}"%"
+    </select>
+
+
+</mapper>

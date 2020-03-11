@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nf.student.dao.StudentDao">
+
+    <!--学生信息-->
+  <resultMap id="studentInfo" type="edu.nf.student.entity.Student">
+      <id property="sid" column="s_id"/>
+      <result property="stuName" column="s_name"/>
+      <result property="stuSex" column="s_sex"/>
+      <result property="stuAge" column="s_age"/>
+      <result property="stuImage" column="s_image"/>
+      <result property="stuCard" column="s_card"/>
+      <result property="stuTel" column="s_tel"/>
+      <result property="passWord" column="s_pass"/>
+      <result property="stuBirthday" column="s_birthday"/>
+      <result property="nation" column="s_nation"/>
+      <result property="nationPlace" column="s_nationplace"/>
+      <result property="politicid" column="s_politicid"/>
+      <result property="stuEmail" column="s_email"/>
+      <result property="qq" column="s_qq"/>
+      <result property="stuClass" column="s_class"/>
+      <result property="stuPosition" column="s_position"/>
+      <result property="stuDepartment" column="s_department"/>
+      <result property="stuAddTime" column="s_add_date"/>
+
+      <association property="department" resultMap="studentDepartment"/>
+      <association property="permission" resultMap="studentPermission"/>
+      <association property="position" resultMap="studentPosition"/>
+  </resultMap>
+
+    <!--班级-->
+    
+    <!--部门表-->
+    <resultMap id="studentDepartment" type="edu.nf.student.entity.Department">
+        <id property="did" column="d_id"></id>
+        <result property="department" column="d_name"/>
+    </resultMap>
+    
+    <!--权限表-->
+    <resultMap id="studentPermission" type="edu.nf.student.entity.Permission">
+        <id property="pid" column="p_id"></id>
+        <result property="stuGrade" column="p_grade"/>
+    </resultMap>
+
+    <!--职位表-->
+    <resultMap id="studentPosition" type="edu.nf.student.entity.Position">
+        <id property="pid" column="p_id"/>
+        <result property="stuPosition" column="p_name"/>
+    </resultMap>
+    <insert id="addStudentInfo" parameterType="edu.nf.student.entity.Student">
+        insert into student_info(s_name,s_sex,s_age,s_image,s_card,s_tel,s_pass,s_birthday,s_nation,s_nationplace,s_politicid,s_email,s_qq,s_class,s_position,s_department,s_add_date)
+        VALUES(#{stuName},#{stuSex},#{stuAge},#{stuImage},#{stuCard},#{stuTel},#{passWord},
+        #{stuBirthday},#{nation},#{nationPlace},#{politicid},#{stuEmail},#{qq},#{stuClass},#{stuPosition},
+        #{stuDepartment},#{stuAddTime})
+    </insert>
+
+    <!--修改图片信息-->
+    <update id="updateStudentImage" parameterType="edu.nf.student.entity.Student">
+             update student_info set s_image = #{stuImage} where s_id = #{sid}
+    </update>
+    <!--修改学生信息-->
+    <update id="updateStudentInfo" parameterType="edu.nf.student.entity.Student">
+            update student_info set s_name=#{stuName},s_tel=#{stuTel},s_pass=#{passWord},s_nationplace=#{nationPlace},s_politicid=#{politicid},s_email=#{stuEmail},s_qq=#{qq},s_class=#{stuClass},s_position=#{stuPosition},s_department=#{stuDepartment} where s_id=#{sid}
+    </update>
+    <delete id="deleteStudentId" parameterType="java.lang.Integer">
+      delete from student_info where s_id = #{sid}
+    </delete>
+
+
+    <!--查询所有信息-->
+   <select id="listStudentInfo" resultMap="studentInfo">
+     select s.s_id,s.s_name,s.s_sex,s.s_age,s.s_image,s.s_card,s.s_tel,s.s_pass,s.s_birthday,s.s_nation,s.s_nationplace,s.s_politicid,s.s_email,
+s.s_qq,s.s_class,p.p_name,d.d_name,s.s_add_date from student_info s inner join student_department d on s.s_department = d.d_id inner join student_position p on s.s_position = p.p_id
+   </select>
+    <select id="getStudentInfo" resultMap="studentInfo" parameterType="java.lang.String">
+select s.s_id,s.s_name,s.s_sex,s.s_age,s.s_image,s.s_card,s.s_tel,s.s_pass,s.s_birthday,s.s_nation,s.s_nationplace,s.s_politicid,s.s_email,
+s.s_qq,s.s_class,p.p_name,d.d_name,s.s_add_date from student_info s inner join student_department d on s.s_department = d.d_id inner join student_position p on s.s_position = p.p_id where s.s_id =#{sid}
+
+    </select>
+    <select id="getStudentLogin"  resultMap="studentInfo"  parameterType="java.lang.String">
+        select s.s_id,s.s_name,s.s_sex,s.s_age,s.s_image,s.s_card,s.s_tel,s.s_pass,s.s_birthday,
+        s.s_nation,s.s_nationplace,s.s_politicid,s.s_email,
+      s.s_qq,s.s_class,p.p_name,d.d_name,s.s_add_date from student_info s
+      inner join student_department d on s.s_department = d.d_id inner join student_position p
+      on s.s_position = p.p_id where s.s_tel =#{stuTel}
+    </select>
+    <select id="getStudentFind" resultMap="studentInfo" parameterType="java.lang.String">
+select s.s_id,s.s_name,s.s_sex,s.s_age,s.s_image,s.s_card,s.s_tel,s.s_pass,s.s_birthday,s.s_nation,s.s_nationplace,s.s_politicid,s.s_email,
+s.s_qq,s.s_class,p.p_name,d.d_name,s.s_add_date from student_info s inner join student_department d on s.s_department = d.d_id inner join
+student_position p on s.s_position = p.p_id where s.s_name like #{findValue}"%" or s.s_class like #{findValue}"%" or d.d_name like #{findValue}"%"
+    </select>
+
+</mapper>
