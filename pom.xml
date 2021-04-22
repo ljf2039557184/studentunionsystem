@@ -35,7 +35,7 @@
         <!-- aspectjweaver-->
         <aspect.versin>1.9.4</aspect.versin>
         <!-- mybatis-->
-        <mybatis.version>3.5.3</mybatis.version>
+        <mybatis.version>3.5.6</mybatis.version>
         <!-- mybatis-spring-->
         <mybatis.spring.version>2.0.3</mybatis.spring.version>
         <!-- servlet-api-->
